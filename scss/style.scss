@@ -1,0 +1,110 @@
+@import "./partials/reset";
+@import "./partials/animations";
+@import "./partials/mixin";
+@import "./partials/buttons";
+@import "./partials/spacing";
+@import "./partials/font";
+@import "./partials/colors";
+@import "./partials/variables";
+header{
+    img{
+        padding-block: 10px;
+    }
+    a{
+       text-decoration: none; 
+    }
+    
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    hero{
+        padding: 20px;
+        background-color: rgb(41, 38, 38);
+        color: white;
+        h1{
+          @include title-big();  
+        }
+        div{
+            display: flex;
+            justify-content: space-around;
+           img{
+            padding: 10px;
+           }
+           .btn1{
+            background-color: #0e6cff;
+           }
+           .btn2{
+            background-color: #ff8700;
+           }
+           .btn3{
+            background-color: #4caf50;
+           }
+            button{
+                
+                margin-top: 40px;
+                padding: 10px;
+                border-radius: 100px;
+            }
+            button:hover{
+                transform: scale(1.2 , 1.2);
+            }
+        }
+    }
+}
+section{
+    div{
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    img{
+        margin-inline: 10%;
+    }
+    }
+}
+// classi colore
+
+$colorList: #4caf50, #ff8700, #0e6cff ;
+$colorMapHex: (
+  
+  green: #008000,
+  orange: #ffa500,
+  blue: #0000ff,
+  
+);
+@each $key, $value in $colorMapHex {
+    .box-#{$key} {
+      background-color: $value;
+    }
+  }
+
+
+  // classi padding
+  $padding: (
+  sm: 10px,
+  normal: 20px,
+  md: 30px,
+  lg: 50px,
+  xl: 100px,
+  xxl: 150px
+);
+
+@each $key, $value in $padding {
+  .padding-inline-#{$key} {
+    padding-inline: $value;
+  }
+
+  .padding-block-#{$key} {
+    padding-block: $value;
+  }
+}
+$margin:(
+    sm: 10px,
+  normal: 20px,
+  md: 30px,
+  lg: 50px,
+  xl: 100px,
+  xxl: 150px
+
+)
