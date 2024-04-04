@@ -140,4 +140,52 @@ section div img {
 
 .padding-block-xxl {
   padding-block: 150px;
+}
+
+.margin-inline-sm {
+  margin-inline: 10px;
+}
+
+.margin-block-sm {
+  margin-block: 10px;
+}
+
+.margin-inline-normal {
+  margin-inline: 20px;
+}
+
+.margin-block-normal {
+  margin-block: 20px;
+}
+
+.margin-inline-md {
+  margin-inline: 30px;
+}
+
+.margin-block-md {
+  margin-block: 30px;
+}
+
+.margin-inline-lg {
+  margin-inline: 50px;
+}
+
+.margin-block-lg {
+  margin-block: 50px;
+}
+
+.margin-inline-xl {
+  margin-inline: 100px;
+}
+
+.margin-block-xl {
+  margin-block: 100px;
+}
+
+.margin-inline-xxl {
+  margin-inline: 150px;
+}
+
+.margin-block-xxl {
+  margin-block: 150px;
 }/*# sourceMappingURL=style.css.map */

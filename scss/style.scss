@@ -107,4 +107,13 @@ $margin:(
   xl: 100px,
   xxl: 150px
 
-)
+);
+@each $key, $value in $margin {
+    .margin-inline-#{$key} {
+      margin-inline: $value;
+    }
+  
+    .margin-block-#{$key} {
+      margin-block: $value;
+    }
+  }
